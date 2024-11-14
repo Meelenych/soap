@@ -1,0 +1,21 @@
+.wipeCursor {
+	position: absolute;
+	background-color: aqua;
+	width: 30px; /* Adjust size */
+	height: 30px;
+	background-image: url('/path/to/your-cursor-image.png');
+	background-size: cover;
+	border-radius: 50%; /* Optional, makes it circular */
+	pointer-events: none; /* So it doesn’t interfere with clicking */
+	transition: transform 0.1s ease; /* Smooth following effect */
+	mix-blend-mode: difference; /* Optional, makes the cursor blend differently */
+}
+
+.wipe-cursor {
+	transition: transform 0.1s ease, opacity 0.3s;
+}
+
+.wipe-cursor:hover {
+	transform: scale(1.2); /* Example: grows slightly on hover */
+	opacity: 0.8;
+}
